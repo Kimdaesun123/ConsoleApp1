@@ -1,15 +1,16 @@
-﻿
-//실습.변수 및 캐스팅
-byte a1 = 30;
-short a2 = 1000;
-int a3 = 2000;
-float a4 = 1.23f;
-double a5 = 0.12345678910;
-decimal a6 = 123456789.10m;
- 
-Console.WriteLine($"{a1.GetType()} a1: {a1}");
-Console.WriteLine($"{a2.GetType()} a2: {a2}");
-Console.WriteLine($"{a3.GetType()} a3: {a3}");
-Console.WriteLine($"{a4.GetType()} a4: {a4}");
-Console.WriteLine($"{a5.GetType()} a5: {a5}");
-Console.WriteLine($"{a6.GetType()} a6: {a6}");
+﻿Random random = new Random();
+int randomValue = random.Next(1,10);
+
+// %연산을 이용해서 0 또는 1만 값이 나오도록 작성
+// 1이 나오면 승리를 출력
+// 0이 나오면 패배 출력
+
+if (randomValue % 2 == 0)
+{
+    Console.WriteLine("패배");
+}
+else
+{
+    Console.WriteLine("승리");
+}
+
